@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: lora, serif;
+}
+
+:root {
+  --main-color: #2e2e2e;
+  --secondary: #4f6d21;
+  --clear: #18210a;
+  --add: #fff;
+}
+
+body {
+  background-color: var(--add);
+}
+
+.navbar {
+  background-color: var(--main-color);
+  padding: 10px;
+  padding-left: 50px;
+}
+.main-title {
+  color: var(--add);
+  font-family: lora;
+  letter-spacing: 6px;
+  font-weight: 200;
+}
+
+.description {
+  background-color: var(--secondary);
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 2%;
+  padding: 1%;
+  border-radius: 10px;
+  color: var(--add);
+}
+.main-container {
+  background-color: var(--secondary);
+  margin: 2%;
+  padding: 1%;
+  border-radius: 10px;
+}
+.calculate-container {
+  display: flex;
+  justify-content: space-around;
+}
+.child-container {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.child-container input {
+  border: none;
+  opacity: 90%;
+  padding: 8px;
+  border-radius: 7px;
+  outline: none;
+  width: 100px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  margin: 5px;
+}
+.child-container input[type="text"]:focus {
+  width: 100%;
+}
+.child-container input::placeholder {
+  opacity: 50%;
+}
+.calculate-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 7px;
+  transition: 0.5s;
+  width: 100px;
+}
+.btn:hover {
+  cursor: pointer;
+  opacity: 80%;
+  border-radius: 14px;
+}
+.btn-clear {
+  background-color: var(--main-color);
+  color: white;
+}
+.btn-calc {
+  background-color: var(--clear);
+  color: white;
+}
+.btn-add {
+  background-color: var(--add);
+  /* color: white; */
+}
+.result-container {
+  color: var(--main-color);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+  font-size: 2rem;
+}
+.sub-headings {
+  margin: 2%;
+  color: var(--add);
+  font-weight: 900;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .child-container input {
+    border: none;
+    opacity: 90%;
+    border-radius: 7px;
+    outline: none;
+    width: 70px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin: 10px;
+    padding: 5px;
+    font-size: 12px;
+    margin: 2%;
+  }
+
+  .child-container input[type="text"]:focus {
+    width: 65%;
+  }
+
+  .sub-headings {
+    margin: 2%;
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    transition: 0.3s;
+    width: 70px;
+    padding: 2px;
+    margin: 2%;
+  }
+  .main-title {
+    text-align: center;
+  }
+  .navbar {
+    padding: 20px;
+  }
+}

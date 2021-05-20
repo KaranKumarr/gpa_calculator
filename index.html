@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPA CALCULATOR</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <nav class="navbar">
+      <h1 class="main-title">GPA CALCULATOR</h1>
+    </nav>
+
+    <div class="description">
+      <p>
+        Your grade point average (GPA) is a measurement of your academic
+        performance throughout high school. Your unweighted GPA is an average of
+        the grades you earned without accounting for the rigor of their
+        associated course, while your weighted GPA accounts for honors and AP
+        designations, granting you more credit for more challenging courses. The
+        4.0 GPA Scale The 4.0 scale is the most commonly used GPA scale. A 4.0
+        represents an A or A+, with each full grade being a full point lower:
+        3.0=B, 2.0=C, and 1.0=D. Pluses are an additional one-third of a point,
+        while minuses are the subtraction of one-third of a point. For example,
+        an A- is a 3.7, and a B+ is a 3.3. An A+, however, is the same value as
+        an A: 4.0.
+      </p>
+    </div>
+    </div>
+    <div class="main-container">
+    <div class="sub-headings">
+      <h2>CALCULATE YOUR GPA</h2>
+    </div>
+
+      <div class="calculate-container">
+        <div class="course-name child-container" id="course-name">
+          <input class="input-boxes" placeholder="Name of course" type="text" />
+
+          <input class="input-boxes" placeholder="Name of course" type="text" />
+
+          <input class="input-boxes" placeholder="Name of course" type="text" />
+
+          <input class="input-boxes" placeholder="Name of course" type="text" />
+
+          <input class="input-boxes" placeholder="Name of course" type="text" />
+
+          <input class="input-boxes" placeholder="Name of course" type="text" />
+        </div>
+        <div class="course-credit child-container" id="course-credit">
+          <input
+            class="input-boxes creditHrs"
+            placeholder="Credit Hrs"
+            type="text"
+          />
+
+          <input
+            class="input-boxes creditHrs"
+            placeholder="Credit Hrs"
+            type="text"
+          />
+
+          <input
+            class="input-boxes creditHrs"
+            placeholder="Credit Hrs"
+            type="text"
+          />
+
+          <input
+            class="input-boxes creditHrs"
+            placeholder="Credit Hrs"
+            type="text"
+          />
+
+          <input
+            class="input-boxes creditHrs"
+            placeholder="Credit Hrs"
+            type="text"
+          />
+
+          <input
+            class="input-boxes creditHrs"
+            placeholder="Credit Hrs"
+            type="text"
+          />
+        </div>
+        <div class="course-gpa child-container" id="course-GPA">
+          <input
+            class="input-boxes gpa"
+            placeholder="GPA of course"
+            type="text"
+          />
+
+          <input
+            class="input-boxes gpa"
+            placeholder="GPA of course"
+            type="text"
+          />
+
+          <input
+            class="input-boxes gpa"
+            placeholder="GPA of course"
+            type="text"
+          />
+
+          <input
+            class="input-boxes gpa"
+            placeholder="GPA of course"
+            type="text"
+          />
+
+          <input
+            class="input-boxes gpa"
+            placeholder="GPA of course"
+            type="text"
+          />
+
+          <input
+            class="input-boxes gpa"
+            placeholder="GPA of course"
+            type="text"
+          />
+        </div>
+      </div>
+
+      <div class="calculate-buttons">
+        <button class="btn btn-clear">Clear</button>
+        <button class="btn btn-calc" onclick="calculate()">Calculate</button>
+        <button class="btn btn-add" onclick=" addNewSpace()">
+          Add New Boxes
+        </button>
+      </div>
+      <div class="result-container">
+        <h4><span id="result"></span></h4>
+      </div>
+    </div>
+  </body>
+</html>
